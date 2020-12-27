@@ -1,0 +1,30 @@
+﻿[CSS:{ path: "~/DesktopModules/DNNQuickSurvey/Content/bootstrap.min.css"}]
+[JavaScript:{ jsname: "JQuery" }]
+[JavaScript:{ path: "~/Resources/Shared/scripts/dnn.jquery.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/scripts/angular.min.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/scripts/angular-animate.min.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/scripts/angular-route.min.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/scripts/angular-touch.min.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/scripts/angular-ui/ui-bootstrap.min.js"}]
+
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/App/app.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/App/factories.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/App/Controllers/surveyFormCtrl.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/App/Controllers/surveyEditCtrl.js"}]
+[JavaScript:{ path: "~/DesktopModules/DNNQuickSurvey/App/Controllers/surveyResultsCtrl.js"}]
+
+<script type="text/javascript">
+	// Sets Module's name
+	var moduleName = "DNNQuickSurvey";
+	// Gets current module Id
+	var sf = $.ServicesFramework(parseInt("[ModuleContext:ModuleId]")); 
+	if ("[ModuleContext:EditMode]" === 'True') {
+		// Determine if in edit mode
+		var editMode = true;
+	}
+</script>
+
+<div ng-app="DNNQuickSurvey">
+	<div ng-view></div>
+</div>
+
