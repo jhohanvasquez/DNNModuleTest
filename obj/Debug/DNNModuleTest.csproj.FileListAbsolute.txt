@@ -1,0 +1,7 @@
+C:\Users\Jhohan\Desktop\DNN\bin\DNNModuleTest.dll
+C:\Users\Jhohan\Desktop\DNN\bin\DNNModuleTest.pdb
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Debug\DNNModuleTest.csproj.CoreCompileInputs.cache
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Debug\DNNModuleTest.csproj.CopyComplete
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Debug\DNNModuleTest.dll
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Debug\DNNModuleTest.pdb
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Debug\DNNModuleTest.csprojAssemblyReference.cache

@@ -8,7 +8,7 @@ using DotNetNuke.Entities.Users;
 
 namespace Jhohan.Modules.DNNModuleTest.Services
 {
-	[SupportedModules("DNNQuickSurvey")]
+	[SupportedModules("DNNModuleTest")]
 	[DnnModuleAuthorize(AccessLevel = SecurityAccessLevel.View)]
 	public class UserController : DnnApiController
 	{

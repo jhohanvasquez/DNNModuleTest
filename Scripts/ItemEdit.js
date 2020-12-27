@@ -1,8 +1,8 @@
-﻿var DNNQuickSurvey = DNNQuickSurvey || {};
+﻿var DNNModuleTest = DNNModuleTest || {};
 
-DNNQuickSurvey.itemViewModel = function (moduleId, resx) {
+DNNModuleTest.itemViewModel = function (moduleId, resx) {
     var service = {
-        path: "DNNQuickSurvey",
+        path: "DNNModuleTest",
         framework: $.ServicesFramework(moduleId)
     }
     service.baseUrl = service.framework.getServiceRoot(service.path) + "Item/";
@@ -135,7 +135,7 @@ DNNQuickSurvey.itemViewModel = function (moduleId, resx) {
         var underlyingArray = userList();
         for (var i = 0; i < data.length; i++) {
             var result = data[i];
-            var user = new DNNQuickSurvey.user(result.id, result.name);
+            var user = new DNNModuleTest.user(result.id, result.name);
             underlyingArray.push(user);
         }
         userList.valueHasMutated();
@@ -166,7 +166,7 @@ DNNQuickSurvey.itemViewModel = function (moduleId, resx) {
     };
 }
 
-DNNQuickSurvey.user = function (id, name) {
+DNNModuleTest.user = function (id, name) {
     this.id = id;
     this.name = name;
 }

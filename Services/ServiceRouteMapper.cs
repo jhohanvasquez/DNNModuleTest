@@ -17,7 +17,7 @@ namespace Jhohan.Modules.DNNModuleTest.Services
 		public void RegisterRoutes(IMapRoute mapRouteManager)
 		{
 			mapRouteManager.MapHttpRoute(
-				moduleFolderName: "DNNQuickSurvey",
+				moduleFolderName: "DNNModuleTest",
 				routeName: "default",
 				url: "{controller}/{itemId}",
 				defaults: new { itemId = RouteParameter.Optional },

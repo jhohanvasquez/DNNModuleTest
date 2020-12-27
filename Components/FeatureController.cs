@@ -20,7 +20,7 @@ namespace Jhohan.Modules.DNNModuleTest.Components
 
 	/// -----------------------------------------------------------------------------
 	/// <summary>
-	/// The Controller class for DNNQuickSurvey
+	/// The Controller class for DNNModuleTest
 	/// 
 	/// The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
 	/// DotNetNuke will poll this class to find out which Interfaces the class implements. 
@@ -53,18 +53,18 @@ namespace Jhohan.Modules.DNNModuleTest.Components
 		//{
 		//string strXML = "";
 
-		//List<DNNQuickSurveyInfo> colDNNQuickSurveys = GetDNNQuickSurveys(ModuleID);
-		//if (colDNNQuickSurveys.Count != 0)
+		//List<DNNModuleTestInfo> colDNNModuleTests = GetDNNModuleTests(ModuleID);
+		//if (colDNNModuleTests.Count != 0)
 		//{
-		//    strXML += "<DNNQuickSurveys>";
+		//    strXML += "<DNNModuleTests>";
 
-		//    foreach (DNNQuickSurveyInfo objDNNQuickSurvey in colDNNQuickSurveys)
+		//    foreach (DNNModuleTestInfo objDNNModuleTest in colDNNModuleTests)
 		//    {
-		//        strXML += "<DNNQuickSurvey>";
-		//        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objDNNQuickSurvey.Content) + "</content>";
-		//        strXML += "</DNNQuickSurvey>";
+		//        strXML += "<DNNModuleTest>";
+		//        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objDNNModuleTest.Content) + "</content>";
+		//        strXML += "</DNNModuleTest>";
 		//    }
-		//    strXML += "</DNNQuickSurveys>";
+		//    strXML += "</DNNModuleTests>";
 		//}
 
 		//return strXML;
@@ -83,14 +83,14 @@ namespace Jhohan.Modules.DNNModuleTest.Components
 		/// -----------------------------------------------------------------------------
 		//public void ImportModule(int ModuleID, string Content, string Version, int UserID)
 		//{
-		//XmlNode xmlDNNQuickSurveys = DotNetNuke.Common.Globals.GetContent(Content, "DNNQuickSurveys");
-		//foreach (XmlNode xmlDNNQuickSurvey in xmlDNNQuickSurveys.SelectNodes("DNNQuickSurvey"))
+		//XmlNode xmlDNNModuleTests = DotNetNuke.Common.Globals.GetContent(Content, "DNNModuleTests");
+		//foreach (XmlNode xmlDNNModuleTest in xmlDNNModuleTests.SelectNodes("DNNModuleTest"))
 		//{
-		//    DNNQuickSurveyInfo objDNNQuickSurvey = new DNNQuickSurveyInfo();
-		//    objDNNQuickSurvey.ModuleId = ModuleID;
-		//    objDNNQuickSurvey.Content = xmlDNNQuickSurvey.SelectSingleNode("content").InnerText;
-		//    objDNNQuickSurvey.CreatedByUser = UserID;
-		//    AddDNNQuickSurvey(objDNNQuickSurvey);
+		//    DNNModuleTestInfo objDNNModuleTest = new DNNModuleTestInfo();
+		//    objDNNModuleTest.ModuleId = ModuleID;
+		//    objDNNModuleTest.Content = xmlDNNModuleTest.SelectSingleNode("content").InnerText;
+		//    objDNNModuleTest.CreatedByUser = UserID;
+		//    AddDNNModuleTest(objDNNModuleTest);
 		//}
 
 		//	throw new System.NotImplementedException("The method or operation is not implemented.");
@@ -106,11 +106,11 @@ namespace Jhohan.Modules.DNNModuleTest.Components
 		//{
 		//SearchItemInfoCollection SearchItemCollection = new SearchItemInfoCollection();
 
-		//List<DNNQuickSurveyInfo> colDNNQuickSurveys = GetDNNQuickSurveys(ModInfo.ModuleID);
+		//List<DNNModuleTestInfo> colDNNModuleTests = GetDNNModuleTests(ModInfo.ModuleID);
 
-		//foreach (DNNQuickSurveyInfo objDNNQuickSurvey in colDNNQuickSurveys)
+		//foreach (DNNModuleTestInfo objDNNModuleTest in colDNNModuleTests)
 		//{
-		//    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objDNNQuickSurvey.Content, objDNNQuickSurvey.CreatedByUser, objDNNQuickSurvey.CreatedDate, ModInfo.ModuleID, objDNNQuickSurvey.QuestionId.ToString(), objDNNQuickSurvey.Content, "QuestionId=" + objDNNQuickSurvey.QuestionId.ToString());
+		//    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objDNNModuleTest.Content, objDNNModuleTest.CreatedByUser, objDNNModuleTest.CreatedDate, ModInfo.ModuleID, objDNNModuleTest.QuestionId.ToString(), objDNNModuleTest.Content, "QuestionId=" + objDNNModuleTest.QuestionId.ToString());
 		//    SearchItemCollection.Add(SearchItem);
 		//}
 

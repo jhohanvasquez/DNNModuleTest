@@ -1,11 +1,11 @@
-﻿var DNNQuickSurvey = DNNQuickSurvey || {};
+﻿var DNNModuleTest = DNNModuleTest || {};
 
-DNNQuickSurvey.quickSettings = function(root, moduleId) {
+DNNModuleTest.quickSettings = function(root, moduleId) {
 
     // Setup your settings service endpoint
     /*
     var service = {
-        path: "DNNQuickSurvey",
+        path: "DNNModuleTest",
         framework: $.ServicesFramework(moduleId)
     }
     service.baseUrl = service.framework.getServiceRoot(service.path) + "Settings/";

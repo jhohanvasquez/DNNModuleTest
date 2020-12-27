@@ -1,5 +1,5 @@
 ﻿angular
-.module('DNNQuickSurvey')
+.module('DNNModuleTest')
 .factory('questionsFactory', function ($http, $q) {
 	var service = {};
 
@@ -92,7 +92,7 @@
 .factory('localizationFactory', function ($http, $q) {
 	var service = {};
 
-	var dataUrl = "/DesktopModules/DNNQuickSurvey/API/DNNQuickSurvey/ResxData";
+	var dataUrl = "/DesktopModules/DNNModuleTest/API/DNNModuleTest/ResxData";
 
 
 	// DNN Services Framework

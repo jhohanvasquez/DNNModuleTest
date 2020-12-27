@@ -1,6 +1,6 @@
 ﻿'use strict';
 angular
-	.module('DNNQuickSurvey', [
+	.module('DNNModuleTest', [
 		'ngRoute',
 		'surveyControllers',
 		'ui.bootstrap'
@@ -10,15 +10,15 @@ angular
 			console.log('app loaded');
 			$routeProvider
 			.when('/results', {
-				templateUrl: '/DesktopModules/DNNQuickSurvey/app/Views/surveyResultsView.html',
+				templateUrl: '/DesktopModules/DNNModuleTest/app/Views/surveyResultsView.html',
 				controller: 'surveyResultsCtrl'
 			})
 			.when('/edit', {
-				templateUrl: '/DesktopModules/DNNQuickSurvey/app/Views/surveyEditView.html',
+				templateUrl: '/DesktopModules/DNNModuleTest/app/Views/surveyEditView.html',
 				controller: 'surveyEditCtrl'
 			})
 			.otherwise({
-				templateUrl: '/DesktopModules/DNNQuickSurvey/app/Views/surveyFormView.html',
+				templateUrl: '/DesktopModules/DNNModuleTest/app/Views/surveyFormView.html',
 				controller: 'surveyFormCtrl'
 			});
 		}

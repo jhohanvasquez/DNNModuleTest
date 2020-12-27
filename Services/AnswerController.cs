@@ -15,7 +15,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Jhohan.Modules.DNNModuleTest.Services
 {
-	[SupportedModules("DNNQuickSurvey")]
+	[SupportedModules("DNNModuleTest")]
 	[DnnModuleAuthorize(AccessLevel = SecurityAccessLevel.View)]
 
 	public class AnswerController : DnnApiController

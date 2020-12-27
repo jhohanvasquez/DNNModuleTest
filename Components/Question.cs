@@ -18,7 +18,7 @@ using DotNetNuke.Entities.Content;
 
 namespace Jhohan.Modules.DNNModuleTest.Components
 {
-	[TableName("DNNQuickSurvey_Questions")]
+	[TableName("DNNModuleTest_Questions")]
 	//setup the primary key for table
 	[PrimaryKey("QuestionId", AutoIncrement = true)]
 	//configure caching using PetaPoco
