@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2016 Ralph Williams
+' Copyright (c) 2019 Jhohan Vasquez
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED

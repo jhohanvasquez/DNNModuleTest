@@ -4,3 +4,4 @@ C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Release\DNNModuleTest.cspr
 C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Release\DNNModuleTest.csproj.CopyComplete
 C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Release\DNNModuleTest.dll
 C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Release\DNNModuleTest.pdb
+C:\Users\Jhohan\Desktop\DNN\DNN Lab\DNNModuleTest\obj\Release\DNNModuleTest.csprojAssemblyReference.cache
