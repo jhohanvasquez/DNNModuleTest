@@ -43,7 +43,7 @@ namespace Jhohan.Modules.DNNModuleTest.Services.ViewModels
 		public int Id { get; set; }
 
 		[JsonProperty("value")]
-		public int Value { get; set; }
+		public string Value { get; set; }
 
 		[JsonProperty("questionId")]
 		public int QuestionId { get; set; }

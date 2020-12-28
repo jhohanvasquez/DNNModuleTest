@@ -34,7 +34,7 @@ namespace Jhohan.Modules.DNNModuleTest.Components
 		///<summary>
 		/// A string with the name of the AnswerValue
 		///</summary>
-		public int AnswerValue { get; set; }
+		public string AnswerValue { get; set; }
 
 		///<summary>
 		/// A string with the description of the object

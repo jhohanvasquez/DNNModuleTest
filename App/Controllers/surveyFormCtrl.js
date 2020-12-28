@@ -32,8 +32,8 @@
             $scope.loadAnswers();
 
             $scope.addNewAnswer = function (newAnswer) {
-                function addAnswer(newAnswerName) {
-                    answersFactory.setAnswers(newAnswerName)
+                function addAnswer(newAnswerName, newQuestionId) {
+                    answersFactory.setAnswers(newAnswerName, newQuestionId)
                         .success(function () {
                             $scope.status = 'Inserted Answer! Refreshing Answer list.';
                             // Reload Answers - pulls list from API to load Answers that
@@ -47,11 +47,10 @@
 
                 // Answer object constructor
                 // Properties are the same as what the AnswerController is expecting
-                function Answer(name) {
+                function Answer(name, questionId) {
                     // Name from input
-                    this.Name = name;
-                    // Static for now, can add variations later
-                    this.Description = 'Text';
+                    this.Value = name;
+                    this.QuestionId = questionId;
                 }
 
                 // Create new object that will be passed to API

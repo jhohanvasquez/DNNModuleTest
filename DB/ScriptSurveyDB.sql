@@ -10,7 +10,7 @@ GO
 
 CREATE TABLE [dbo].[DNNModuleTest_Answers](
 	[AnswerId] [int] IDENTITY(1,1) NOT NULL,
-	[AnswerValue] [int] NULL,
+	[AnswerValue] [varchar](max) NULL,
 	[QuestionId] [int] NULL,
 	[AssignedUserId] [int] NULL,
 	[ModuleId] [int] NULL,
