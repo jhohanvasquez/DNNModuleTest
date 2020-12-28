@@ -1,5 +1,5 @@
 ﻿angular
-    .module('surveyControllers', [])
+    .module('surveyControllers')
     .controller('surveyResultsCtrl', ['$scope', '$http', 'answersFactory', '$location',
         function ($scope, $http, answersFactory, $location, $sce) {
 
