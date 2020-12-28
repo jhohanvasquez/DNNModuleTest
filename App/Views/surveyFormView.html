@@ -1,7 +1,7 @@
 ﻿<h2>Survey Form View</h2>
 <ol>
     <li ng-repeat="question in questions">
-        {{ question.id }}{{ question.name }}<input ng-model="newAnswerName" type="text" />
+        {{ question.name }}<input ng-model="newAnswerName" type="text" />
         <a class="btn btn-primary" ng-click="addNewAnswer(newAnswerName,question.id)">Add answer</a>
     </li>
 </ol>

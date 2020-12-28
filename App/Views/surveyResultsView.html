@@ -1,3 +1,7 @@
 ﻿<h2>Survey Results View</h2>
-<h3>{{ questions }}</h3>
+<ol>
+    <li ng-repeat="answer in answers">
+        {{ answer.value }}
+    </li>
+</ol>
 <a ng-href="#" class="btn btn-primary">Return to Survey</a>
