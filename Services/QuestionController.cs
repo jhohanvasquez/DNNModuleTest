@@ -12,6 +12,7 @@ using DotNetNuke.UI.Modules;
 using DotNetNuke.Common.Utilities;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using Jhohan.Modules.DNNModuleTest.Utils;
 
 namespace Jhohan.Modules.DNNModuleTest.Services
 {
@@ -38,6 +39,9 @@ namespace Jhohan.Modules.DNNModuleTest.Services
 			var question = _repository.GetQuestion(questionId, ActiveModule.ModuleID);
 
 			_repository.DeleteQuestion(question);
+
+			//Send Email to user
+			surveyEmails.SendMail(string.Empty, string.Empty, $"Delete question: {question.QuestionName}");
 
 			return Request.CreateResponse(System.Net.HttpStatusCode.NoContent);
 		}
@@ -72,7 +76,7 @@ namespace Jhohan.Modules.DNNModuleTest.Services
 		protected string GetEditUrl(int id)
 		{
 			string editUrl = Globals.NavigateURL("Edit", string.Format("mid={0}", ActiveModule.ModuleID), string.Format("tid={0}", id));
-
+			//Open PopPup
 			if (PortalSettings.EnablePopUps)
 			{
 				editUrl = UrlUtils.PopUpUrl(editUrl, PortalSettings, false, false, 550, 950);
@@ -111,6 +115,9 @@ namespace Jhohan.Modules.DNNModuleTest.Services
 			};
 			_repository.AddQuestion(t);
 
+			//Send Email to user
+			surveyEmails.SendMail(string.Empty,string.Empty, $"Add question: {t.QuestionName}");
+
 			return t;
 		}
 
@@ -127,6 +134,9 @@ namespace Jhohan.Modules.DNNModuleTest.Services
 				t.LastModifiedOnDate = DateTime.UtcNow;
 			}
 			_repository.UpdateQuestion(t);
+
+			//Send Email to user
+			surveyEmails.SendMail(string.Empty, string.Empty, $"Update question: {t.QuestionName}");
 
 			return t;
 		}
